@@ -10,7 +10,6 @@ sonar {
     properties {
         property "sonar.projectKey", "mahwishriazjamil_vulnerable-java-application_93d332d4-391c-4f73-af30-9dae196a280f"
         property "sonar.projectName", "vulnerable-java-application"
-        sonar.gradle.skipCompile=true
     }
 }
 
@@ -42,4 +41,11 @@ tasks.named('test') {
 
 dependencyLocking {
     lockAllConfigurations()
+}
+
+jacocoTestReport {
+    reports {
+        xml.required = true
+        html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+    }
 }
