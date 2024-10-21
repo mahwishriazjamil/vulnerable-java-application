@@ -10,7 +10,8 @@ sonar {
     properties {
         property "sonar.projectKey", "mahwishriazjamil_vulnerable-java-application_93d332d4-391c-4f73-af30-9dae196a280f"
         property "sonar.projectName", "vulnerable-java-application"
-        property("sonar.sources", "src/main")
+        property "sonar.sources", "src/main"
+        property "sonar.branch.name", "src/adding_sq"
         property "sonar.tests", "src/test"
     }
 }
